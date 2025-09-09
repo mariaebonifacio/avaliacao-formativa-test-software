@@ -4,13 +4,29 @@ import re
 
 # ------------------------------------VALIDANDO STRING ------------------------------------------------------
 
-def test_triangulo_sem_erro():
+def test_isosceles():
     a = 3
     b = 5
     c = 3
 
     resultado = classificar_triangulo(a, b, c)
     assert resultado == ("Isósceles.")
+
+def test_equilatero():
+    a = 5
+    b = 5
+    c = 5
+
+    resultado = classificar_triangulo(a, b, c)
+    assert resultado == ("Equilátero.")
+
+def test_escaleno():
+    a = 3
+    b = 2
+    c = 4
+
+    resultado = classificar_triangulo(a, b, c)
+    assert resultado == ("Escaleno.")
 
 # VALIDANDO STRING ------------------------------------------
 

@@ -42,4 +42,4 @@ def classificar_triangulo(a: float, b: float, c: float):
 
     # Se todos os três lados forem diferentes, a função deve retornar a string "Escaleno".
     else:
-        "Escaleno"
+        return "Escaleno."
